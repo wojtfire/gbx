@@ -60,8 +60,6 @@
                   "maximumError": "10kb"
                 }
               ],
-              "baseHref": "/",
-              "deployUrl": "https://wojtfire.github.io/gbx"
             }
           }
         },
