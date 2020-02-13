@@ -73,7 +73,7 @@ export class MainComponent extends BaseComponent implements OnInit, AfterViewIni
   private compareDates = (a: RepoDto, b: RepoDto): number => {
     const dateA = new Date(a.updated_at);
     const dateB = new Date(b.updated_at);
-    return dateA > dateB ? dateA === dateB ? 0 : -1 : 1;
+    return dateA > dateB ? dateA === dateB ? 0 : 1 : -1;
   }
 
   @HostListener('window:resize', ['$event'])
