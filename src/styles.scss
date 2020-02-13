@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/css/fonts.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}

@@ -1,0 +1,15 @@
+<div class="container" [formGroup]="form">
+  <div #header class="header">
+    <div class="logo"></div>
+    <div class="inline">
+      <span class="title">Rekrutacja GBX Soft</span>
+      <input-text (clicked)="onUserSearch($event)" #inputText formControlName="userName" placeholder="Username" (enter)="onUserSearch()">Wpisz nazwę użytkownika repo</input-text>
+    </div>
+    <div class="progress-bar" *ngIf="loadingService.loading">
+      <div class="line"></div>
+      <div class='subline inc'></div>
+      <div class='subline dec'></div>
+    </div>
+  </div>
+  <app-repos *ngIf="repos.length" [repos]="repos" [style.height.px]="height"></app-repos>
+</div>

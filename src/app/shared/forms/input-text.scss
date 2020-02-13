@@ -1,0 +1,66 @@
+:host {
+  .form-control {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 400px;
+    padding: 5px;
+    width: min-content;
+
+    &:hover input {
+      border-color: #304389;
+      transition: 0.3s;
+    }
+
+    &.focused {
+      input {
+        border-color: #304389;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  label {
+    font-weight: normal;
+    font-size: 12px;
+    padding: 0px 0px 3px 7px;
+    color: #304389;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .input-wrapper {
+    position: relative;
+
+    input {
+      height: 42px;
+      min-width: 400px;
+      position: relative;
+      padding: 5px 50px 5px 10px;
+      border: 2px solid #F1F4FF;
+      border-radius: 10px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .icon {
+      display: block;
+      width:15px;
+      height: 15px;
+      position: absolute;
+      top: calc(50% - 7px);
+      right: 33px;
+      z-index: 999;
+      cursor: pointer;
+
+      path {
+        transition: 0.3s;
+      }
+
+      &:hover path {
+        transition: 0.3s;
+        fill: #304389;
+      }
+    }
+  }
+}
